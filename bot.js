@@ -2881,7 +2881,7 @@ var prefix = "#";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
-    channel: "welcome"
+    channel: "ж-ا̍هــﻻ̍ۙ-̨ﯡڛۜــﮪــﻻ̍ۙ-ּبــڭــمۭ-ж"
 }
 const channel = sWlc[message.guild.id].channel
   if (message.content.startsWith(prefix + "setwelcomer")) {
@@ -2897,7 +2897,7 @@ const channel = sWlc[message.guild.id].channel
 
 client.on("guildMemberAdd", member => {
       if(#sWlc[member.guild.id]) sWlc[member.guild.id] = {
-    channel: "welcome"
+    channel: "ж-ا̍هــﻻ̍ۙ-̨ﯡڛۜــﮪــﻻ̍ۙ-ּبــڭــمۭ-ж"
   }
   const channel = sWlc[member.guild.id].channel
     const sChannel = sWlc[member.guild.id].channel
