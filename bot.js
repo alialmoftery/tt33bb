@@ -2451,7 +2451,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
  client.on('message', message => {
 	   var prefix = "#";
    if (message.content.startsWith(prefix + "كت تويت")) {
-                if(#message.channel.guild) return message.reply('** This command only for servers**');
+                if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
