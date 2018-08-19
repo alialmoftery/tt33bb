@@ -377,7 +377,7 @@ client.on('message' , message => {
         return;
       }
           var role = message.mentions.roles.first();
-            if(#role) {
+            if(!role) {
               message.reply("لا توجد رتبة بهذا الاسم");
                 return;
             }
