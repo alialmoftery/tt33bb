@@ -2896,7 +2896,7 @@ const channel = sWlc[message.guild.id].channel
 
 
 client.on("guildMemberAdd", member => {
-      if(#sWlc[member.guild.id]) sWlc[member.guild.id] = {
+      if(!sWlc[member.guild.id]) sWlc[member.guild.id] = {
     channel: "ж-ا̍هــﻻ̍ۙ-̨ﯡڛۜــﮪــﻻ̍ۙ-ּبــڭــمۭ-ж"
   }
   const channel = sWlc[member.guild.id].channel
