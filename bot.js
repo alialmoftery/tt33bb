@@ -2896,14 +2896,14 @@ const channel = sWlc[message.guild.id].channel
 
 
 client.on("guildMemberAdd", member => {
-      if(!sWlc[member.guild.id]) sWlc[member.guild.id] = {
+      if(#sWlc[member.guild.id]) sWlc[member.guild.id] = {
     channel: "welcome"
   }
   const channel = sWlc[member.guild.id].channel
     const sChannel = sWlc[member.guild.id].channel
     let welcomer = member.guild.channels.find('name', sChannel);
     let memberavatar = member.user.avatarURL
-      if (#welcomer) return;
+      if (!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
          var h = member.user;
